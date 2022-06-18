@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="favicon2.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>NADIN Picture | авторские картины </title>
+
+    <meta name="description" content="Nadin Picture : "/>
+    <meta name="keywords" content="Nadin, picture, "/>
+    <meta name="author" content="Nadin Kopilova"/>
+    
+</head>
+<body>
+
+    <div class="navContainer">
+        <nav class="myNav">
+            
+            <a href="#" class="navLink secretLogo">
+                <img class="logoNav " src="../images/nadin2.png" alt="logo Nadin">
+            </a>
+        <div id="hiddenLinks">
+            <a href="#container" class="navLink">работы</a>
+            <a href="shop.html" class="navLink">купить</a>
+            <a href="#" class="navLink start">
+                <img class="logoNav " src="../images/nadin2.png" alt="logo Nadin">
+            </a>
+            <a href="about.html" class="navLink">обо мне</a>
+            <a href="contact.html" class="navLink">связаться</a>
+        </div>
+        </nav>
+    </div>
+
+
+    <section class="project_filters">
+
+        
+
+        <div id="filters_container">
+          <span class="clear"><a href="#" class="selected" style="opacity: 1;" id="all">все</a></span>
+      
+          <ul class="filters themes">
+                <li><a href="#" data-filter=".people" id="people" style="opacity: 0.4;">люди</a></li>
+                <li><a href="#" data-filter=".animals" id="animals" style="opacity: 0.4;">животные</a></li>
+                <li><a href="#" data-filter=".abstract" id="abstract" style="opacity: 0.4;">абстракция</a></li>
+                <li><a href="#" data-filter=".geometric" id="geometric" style="opacity: 0.4;">графический</a></li>
+                <li><a href="#" data-filter=".wall" id="wall" style="opacity: 0.4;">роспись стен</a></li>
+                <li><a href="#" data-filter=".flowers" id="flowers" style="opacity: 0.4;">цветы</a></li>
+              </ul>
+      
+          <ul class="filters colours">
+                <li class="colour"><a href="#" data-filter=".black" id="black" style="background-color: rgb(0, 0, 0); opacity: 0.4;">#000000</a></li>
+                <li class="colour"><a href="#" data-filter=".blue" id="blue"  style="background-color: rgb(4, 132, 193); opacity: 0.4;">#0484c1</a></li>
+                <li class="colour"><a href="#" data-filter=".green" id="green"  style="background-color: rgb(3, 141, 54); opacity: 0.4;">#038d36</a></li>
+                <li class="colour"><a href="#" data-filter=".red" id="red"  style="background-color: rgb(223, 48, 54); opacity: 0.4;">#df3036</a></li>
+                <li class="colour"><a href="#" data-filter=".white" id="white"  style="background-color: rgb(242, 242, 242); opacity: 0.4;">#f2f2f2</a></li>
+                <li class="colour"><a href="#" data-filter=".yellow" id="yellow"  style="background-color: rgb(255, 202, 0); opacity: 0.4;">#ffca00</a></li>
+              </ul>
+      
+      
+        </div>
+      
+        <div id="filters_switch" class="eye">
+           
+          <a href="#">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="eye" viewBox="0 0 16 16">
+                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+              </svg>
+            </a>
+          <div id="filter_active_marker" style="display: block;" >
+            
+        </div>
+        </div>
+      
+      </section>
+
+
+
+<!--
+  try original
+-->
+
+<!--
+
+<div class="projects contentContainer" id="container" 
+style="
+  position: relative; 
+  max-width: 1850px;
+  margin: 0 auto 0 auto;">
+
+
+    <div class="work_item big geometric black divs" data-project-bg-colour="#141414" style="background-color: rgb(20, 20, 20); ">
+      <p class="hiddenSearch">geometric black white abstract</p>
+      <a href="#">
+        <img loading="lazy" src="../images/carre.jpg">
+        <span class="inner" style="background-color:#141414;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Зеркала</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+          
+                          
+    
+         <div class="work_item ">
+
+        
+  
+    <div class=" item position_relative flowers red divs" data-project-bg-colour="#000000" style="background-color: rgb(138, 36, 73);">
+      <p class="hiddenSearch">flowers red white</p>
+      <a href="#">
+        <img loading="eager" src="../images/pion1.jpg">
+        <span class="inner" style="background-color:#8A2449;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Пионы</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+          
+                          
+    <div class="item position_relative flowers red divs" data-project-bg-colour="#000000" style="background-color: rgb(138, 36, 73);">
+      <p class="hiddenSearch">flowers red white</p>
+      <a href="#">
+        <img loading="eager" src="../images/pion2.jpg">
+        <span class="inner" style="background-color:#8A2449;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Пионы</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+     
+            
+  </div>  
+
+
+    <div class="work_item big flowers wall red divs" data-project-bg-colour="#000000" style="background-color: rgb(199, 77, 78); ">
+      <p class="hiddenSearch">flowers wall red white green</p>
+      <a href="#">
+        <img loading="eager" src="../images/lotos.jpg">
+        <span class="inner" style="background-color:#C74D4E;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Лотосы</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+          
+
+
+
+    
+          
+    <div class=" work_item">
+
+
+      <div class=" item people green position_relative divs" data-project-bg-colour="#002e33" style="background-color: rgb(0, 190, 101) ;">
+        <p class="hiddenSearch">people animals green blue</p>
+        <a href="#">
+          <img loading="eager" src="../images/girl.jpg">
+          <span class="inner" style="background-color:#00be65 ;">
+            <span class="helper"></span>
+            <span class="info">
+              <h2>Лес</h2>
+              <p>80*70 акрил</p>
+            </span>
+          </span>
+        </a>
+      </div>
+
+
+      <div class="item people black position_relative divs" data-project-bg-colour="#00be65" style="background-color:  rgb(0, 46, 51); ">
+        <p class="hiddenSearch">people black white </p>
+        <a href="#">
+          <img loading="lazy" src="../images/man.jpg">
+          <span class="inner" style="background-color:#002e33;">
+            <span class="helper"></span>
+            <span class="info">
+              <h2>Джинсы</h2>
+              <p>80*70 акрил</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      
+
+    </div>
+
+<div class=" work_item">
+
+
+  <div class="item animals black  position_relative divs" data-project-bg-colour="#4269ff" style="background-color: rgb(66, 105, 255); ">
+    <p class="hiddenSearch"> animals black white yellow</p>
+    <a href="#">
+      <img loading="lazy" src="../images/owl.jpg">
+      <span class="inner" style="background-color:#4269ff;">
+        <span class="helper"></span>
+        <span class="info">
+          <h2>Нежность</h2>
+          <p>80*70 акрил</p>
+        </span>
+      </span>
+    </a>
+  </div>
+      
+
+
+  
+  <div class="item movies red  position_relative divs" data-project-bg-colour="#831100" style="background-color: rgb(131, 17, 0);">
+    <p class="hiddenSearch">flowers red white yellow</p>
+    <a href="#">
+      <img loading="lazy" src="../images/flower1.jpg">
+      <span class="inner" style="background-color:#831100;">
+        <span class="helper"></span>
+        <span class="info">
+          <h2>Розы</h2>
+          <p>80*70 акрил</p>
+        </span>
+      </span>
+    </a>
+  </div>
+
+</div>
+      
+    
+          
+
+    
+            
+  
+  
+    <div class="work_item big black people divs" data-project-bg-colour="#421dff" style="background-color: rgb(66, 29, 255); ">
+      <p class="hiddenSearch">people abstract black white blue</p>
+      <a href="#">
+        <img loading="lazy" src="../images/man2.jpg">
+        <span class="inner" style="background-color:#421dff;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Колдун</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+          
+                          
+    
+   <div class="work_item ">
+
+
+    <div class=" item animals yellow position_relative divs" data-project-bg-colour="#6082fe" style="background-color: rgb(96, 130, 254); ">
+      <p class="hiddenSearch"> animals black white yellow</p>
+      <a href="#">
+        <img loading="lazy" src="../images/trio.jpg">
+        <span class="inner" style="background-color:#6082fe;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Трое</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+          
+                          
+    
+            
+  
+    <div class=" item flowers white red position_relative divs" data-project-bg-colour="#000000" style="background-color: rgb(0, 0, 0);" >
+      <p class="hiddenSearch">flowers abstract red white</p>
+      <a href="#">
+        <img loading="lazy" src="../images/flower2.jpg">
+        <span class="inner" style="background-color:#000000;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Розы</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+
+   </div>         
+  
+                        
+    
+            
+  
+    <div class="work_item black animals black  yellow divs" data-project-bg-colour="#222222" style="background-color: rgb(34, 34, 34); ">
+      <p class="hiddenSearch"> animals black white yellow</p>
+      <a href="#">
+        <img loading="lazy" src="../images/lezard.jpg">
+        <span class="inner" style="background-color:#222222;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Дракон</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+     
+</div>
+
+-->
+
+
+<!--
+  try float
+-->
+
+
+<div class="floatContainer" id="container" 
+style="
+  position: relative; 
+  max-width: 1850px;
+  margin: 0 auto 0 auto;">
+
+
+    <div class="float_item large position_relative  geometric black divs" data-project-bg-colour="#141414" style="background-color: rgb(20, 20, 20); ">
+      <p class="hiddenSearch">geometric black white abstract</p>
+      <a href="#">
+        <img loading="lazy" src="../images/carre.jpg">
+        <span class="inner" style="background-color:#141414;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Зеркала</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+          
+                          
+    
+         
+
+        
+  
+    <div class="float_item  position_relative flowers red divs" data-project-bg-colour="#000000" style="background-color: rgb(138, 36, 73);">
+      <p class="hiddenSearch">flowers red white</p>
+      <a href="#">
+        <img loading="eager" src="../images/pion1.jpg">
+        <span class="inner" style="background-color:#8A2449;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Пионы</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+          
+                          
+    <div class="float_item  position_relative flowers red divs" data-project-bg-colour="#000000" style="background-color: rgb(138, 36, 73);">
+      <p class="hiddenSearch">flowers red white</p>
+      <a href="#">
+        <img loading="eager" src="../images/pion2.jpg">
+        <span class="inner" style="background-color:#8A2449;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Пионы</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+     
+            
+   
+
+
+    <div class="float_item  position_relative flowers wall red divs" data-project-bg-colour="#000000" style="background-color: rgb(199, 77, 78); ">
+      <p class="hiddenSearch">flowers wall red white green</p>
+      <a href="#">
+        <img loading="eager" src="../images/lotos.jpg">
+        <span class="inner" style="background-color:#C74D4E;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Лотосы</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+          
+
+
+
+    
+          
+    
+
+
+      <div class="float_item people green position_relative divs" data-project-bg-colour="#002e33" style="background-color: rgb(0, 190, 101) ;">
+        <p class="hiddenSearch">people animals green blue</p>
+        <a href="#">
+          <img loading="eager" src="../images/girl.jpg">
+          <span class="inner" style="background-color:#00be65 ;">
+            <span class="helper"></span>
+            <span class="info">
+              <h2>Лес</h2>
+              <p>80*70 акрил</p>
+            </span>
+          </span>
+        </a>
+      </div>
+
+
+      <div class="float_item  people black position_relative divs" data-project-bg-colour="#00be65" style="background-color:  rgb(0, 46, 51); ">
+        <p class="hiddenSearch">people black white </p>
+        <a href="#">
+          <img loading="lazy" src="../images/man.jpg">
+          <span class="inner" style="background-color:#002e33;">
+            <span class="helper"></span>
+            <span class="info">
+              <h2>Джинсы</h2>
+              <p>80*70 акрил</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      
+
+    
+
+
+
+  <div class="float_item animals black  position_relative divs" data-project-bg-colour="#4269ff" style="background-color: rgb(66, 105, 255); ">
+    <p class="hiddenSearch"> animals black white yellow</p>
+    <a href="#">
+      <img loading="lazy" src="../images/owl.jpg">
+      <span class="inner" style="background-color:#4269ff;">
+        <span class="helper"></span>
+        <span class="info">
+          <h2>Нежность</h2>
+          <p>80*70 акрил</p>
+        </span>
+      </span>
+    </a>
+  </div>
+      
+
+
+  
+  <div class="float_item movies red  position_relative divs" data-project-bg-colour="#831100" style="background-color: rgb(131, 17, 0);">
+    <p class="hiddenSearch">flowers red white yellow</p>
+    <a href="#">
+      <img loading="lazy" src="../images/flower1.jpg">
+      <span class="inner" style="background-color:#831100;">
+        <span class="helper"></span>
+        <span class="info">
+          <h2>Розы</h2>
+          <p>80*70 акрил</p>
+        </span>
+      </span>
+    </a>
+  </div>
+
+
+      
+    
+          
+
+    
+            
+  
+  
+    <div class="float_item large position_relative black people divs" data-project-bg-colour="#421dff" style="background-color: rgb(66, 29, 255); ">
+      <p class="hiddenSearch">people abstract black white blue</p>
+      <a href="#">
+        <img loading="lazy" src="../images/man2.jpg">
+        <span class="inner" style="background-color:#421dff;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Колдун</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+          
+                          
+    
+   
+
+
+    <div class="float_item animals yellow position_relative divs" data-project-bg-colour="#6082fe" style="background-color: rgb(96, 130, 254); ">
+      <p class="hiddenSearch"> animals black white yellow</p>
+      <a href="#">
+        <img loading="lazy" src="../images/trio.jpg">
+        <span class="inner" style="background-color:#6082fe;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Трое</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+          
+                          
+    
+            
+  
+    <div class="float_item flowers white red position_relative divs" data-project-bg-colour="#000000" style="background-color: rgb(0, 0, 0);" >
+      <p class="hiddenSearch">flowers abstract red white</p>
+      <a href="#">
+        <img loading="lazy" src="../images/flower2.jpg">
+        <span class="inner" style="background-color:#000000;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Розы</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+
+         
+  
+                        
+    
+            
+  
+    <div class="float_item position_relative black animals black  yellow divs" data-project-bg-colour="#222222" style="background-color: rgb(34, 34, 34); ">
+      <p class="hiddenSearch"> animals black white yellow</p>
+      <a href="#">
+        <img loading="lazy" src="../images/lezard.jpg">
+        <span class="inner" style="background-color:#222222;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Дракон</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+
+
+
+    <div class="float_item position_relative animals black  yellow divs" data-project-bg-colour="#e00942" style="background-color: rgb(224, 9, 66); ">
+      <p class="hiddenSearch"> flowers red white </p>
+      <a href="#">
+        <img loading="lazy" src="../images/granat.jpg">
+        <span class="inner" style="background-color:#e00942;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Юг</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+
+    <div class="float_item position_relative animals black  yellow divs specialMarge" data-project-bg-colour="#e00942" style="background-color: rgb(224, 9, 66); ">
+      <p class="hiddenSearch">flowers red white abstract</p>
+      <a href="#">
+        <img loading="lazy" src="../images/alko1.jpg">
+        <span class="inner" style="background-color:#e00942;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Чернила</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+
+
+    
+    <div class="float_item large position_relative animals black  yellow divs" data-project-bg-colour="#e00942" style="background-color: rgb(224, 9, 66);">
+      <p class="hiddenSearch"> animals red </p>
+      <a href="#">
+        <img loading="lazy" src="../images/flam.jpg">
+        <span class="inner" style="background-color:#e00942;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Фламинго</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+  
+
+
+    <div class="float_item position_relative black animals black  yellow divs" data-project-bg-colour="#222222" style="background-color: rgb(34, 34, 34); ">
+      <p class="hiddenSearch"> abstract geometric black white </p>
+      <a href="#">
+        <img loading="lazy" src="../images/glaz.jpg">
+        <span class="inner" style="background-color:#222222;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Вижу</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+
+    <div class="float_item position_relative black animals black  yellow divs" data-project-bg-colour="rgb(36, 62, 117)" style="background-color: rgb(36, 62, 117); ">
+      <p class="hiddenSearch"> animals blue  </p>
+      <a href="#">
+        <img loading="lazy" src="../images/bird.jpg">
+        <span class="inner" style="background-color:rgb(36, 62, 117);">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Снежок</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+
+    <div class="float_item position_relative black animals black  yellow divs" data-project-bg-colour="#222222" style="background-color: rgb(34, 34, 34); ">
+      <p class="hiddenSearch"> animals black white </p>
+      <a href="#">
+        <img loading="lazy" src="../images/orel1.jpg">
+        <span class="inner" style="background-color:#222222;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Крылья</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+
+    <div class="float_item position_relative black animals black  yellow divs" data-project-bg-colour="#222222" style="background-color: rgb(34, 34, 34); ">
+      <p class="hiddenSearch"> animals black white </p>
+      <a href="#">
+        <img loading="lazy" src="../images/zebra.jpg">
+        <span class="inner" style="background-color:#222222;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Белое</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+
+    <div class="float_item position_relative black animals black  yellow divs" data-project-bg-colour="#222222" style="background-color: rgb(34, 34, 34); ">
+      <p class="hiddenSearch"> abstract geometric black white </p>
+      <a href="#">
+        <img loading="lazy" src="../images/glaz2.jpg">
+        <span class="inner" style="background-color:#222222;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Вижу</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+
+    <div class="float_item position_relative black animals black  yellow divs" data-project-bg-colour="#222222" style="background-color: rgb(34, 34, 34); ">
+      <p class="hiddenSearch"> animals black white </p>
+      <a href="#">
+        <img loading="lazy" src="../images/orel2.jpg">
+        <span class="inner" style="background-color:#222222;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Крылья</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+    
+     
+</div>
+
+
+
+
+
+<!--
+---------------------------------------------------------------------------------------
+  try grid
+-->
+
+
+<!--
+
+
+<div class="tryContainer"  
+style="
+  position: relative; 
+  max-width: 1850px;
+  margin: 0 auto 0 auto;">
+
+
+    <div class=" try geometric black divs position_relative" 
+    data-project-bg-colour="#141414" style="background-color: rgb(20, 20, 20); grid-column: 1/3; grid-row: 1/3;">
+      <p class="hiddenSearch">geometric black white abstract</p>
+      <a href="#">
+        <img loading="lazy" src="../images/carre.jpg">
+        <span class="inner" style="background-color:#141414;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Зеркала</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+          
+                          
+    
+         
+
+        
+  
+    <div class=" try  position_relative flowers red divs" data-project-bg-colour="#000000" style="background-color: rgb(138, 36, 73);">
+      <p class="hiddenSearch">flowers red white</p>
+      <a href="#">
+        <img loading="eager" src="../images/pion1.jpg">
+        <span class="inner" style="background-color:#8A2449;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Пионы</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+          
+                          
+    <div class="try position_relative flowers red divs" data-project-bg-colour="#000000" style="background-color: rgb(138, 36, 73);">
+      <p class="hiddenSearch">flowers red white</p>
+      <a href="#">
+        <img loading="eager" src="../images/pion2.jpg">
+        <span class="inner" style="background-color:#8A2449;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Пионы</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+     
+            
+ 
+
+
+    <div class="try flowers wall red divs position_relative" data-project-bg-colour="#000000" style="background-color: rgb(199, 77, 78); ">
+      <p class="hiddenSearch">flowers wall red white green</p>
+      <a href="#">
+        <img loading="eager" src="../images/lotos.jpg">
+        <span class="inner" style="background-color:#C74D4E;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Лотосы</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+          
+
+
+
+    
+          
+    
+
+
+      <div class=" try  people green position_relative divs" data-project-bg-colour="#002e33" style="background-color: rgb(0, 190, 101) ;">
+        <p class="hiddenSearch">people animals green blue</p>
+        <a href="#">
+          <img loading="eager" src="../images/girl.jpg">
+          <span class="inner" style="background-color:#00be65 ;">
+            <span class="helper"></span>
+            <span class="info">
+              <h2>Лес</h2>
+              <p>80*70 акрил</p>
+            </span>
+          </span>
+        </a>
+      </div>
+
+
+      <div class="try  people black position_relative divs" data-project-bg-colour="#00be65" style="background-color:  rgb(0, 46, 51); ">
+        <p class="hiddenSearch">people black white </p>
+        <a href="#">
+          <img loading="lazy" src="../images/man.jpg">
+          <span class="inner" style="background-color:#002e33;">
+            <span class="helper"></span>
+            <span class="info">
+              <h2>Джинсы</h2>
+              <p>80*70 акрил</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      
+
+  
+
+
+
+
+  <div class="try  animals black  position_relative divs" data-project-bg-colour="#4269ff" style="background-color: rgb(66, 105, 255); ">
+    <p class="hiddenSearch"> animals black white yellow</p>
+    <a href="#">
+      <img loading="lazy" src="../images/owl.jpg">
+      <span class="inner" style="background-color:#4269ff;">
+        <span class="helper"></span>
+        <span class="info">
+          <h2>Нежность</h2>
+          <p>80*70 акрил</p>
+        </span>
+      </span>
+    </a>
+  </div>
+      
+
+
+  
+  <div class="try  movies red  position_relative divs" data-project-bg-colour="#831100" style="background-color: rgb(131, 17, 0);">
+    <p class="hiddenSearch">flowers red white yellow</p>
+    <a href="#">
+      <img loading="lazy" src="../images/flower1.jpg">
+      <span class="inner" style="background-color:#831100;">
+        <span class="helper"></span>
+        <span class="info">
+          <h2>Розы</h2>
+          <p>80*70 акрил</p>
+        </span>
+      </span>
+    </a>
+  </div>
+
+
+      
+    
+          
+
+    
+            
+  
+  
+    <div class="try  black people divs position_relative" data-project-bg-colour="#421dff" style="background-color: rgb(66, 29, 255); ">
+      <p class="hiddenSearch">people abstract black white blue</p>
+      <a href="#">
+        <img loading="lazy" src="../images/man2.jpg">
+        <span class="inner" style="background-color:#421dff;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Колдун</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+          
+                          
+    
+  
+
+
+    <div class="try animals yellow position_relative divs" data-project-bg-colour="#6082fe" style="background-color: rgb(96, 130, 254); ">
+      <p class="hiddenSearch"> animals black white yellow</p>
+      <a href="#">
+        <img loading="lazy" src="../images/trio.jpg">
+        <span class="inner" style="background-color:#6082fe;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Трое</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+          
+                          
+    
+            
+  
+    <div class="try   flowers white red position_relative divs" data-project-bg-colour="#000000" style="background-color: rgb(0, 0, 0);" >
+      <p class="hiddenSearch">flowers abstract red white</p>
+      <a href="#">
+        <img loading="lazy" src="../images/flower2.jpg">
+        <span class="inner" style="background-color:#000000;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Розы</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+
+        
+  
+                        
+    
+            
+  
+    <div class="try  black animals black  yellow divs position_relative" data-project-bg-colour="#222222" style="background-color: rgb(34, 34, 34); ">
+      <p class="hiddenSearch"> animals black white yellow</p>
+      <a href="#">
+        <img loading="lazy" src="../images/lezard.jpg">
+        <span class="inner" style="background-color:#222222;">
+          <span class="helper"></span>
+          <span class="info">
+            <h2>Дракон</h2>
+            <p>80*70 акрил</p>
+          </span>
+        </span>
+      </a>
+    </div>
+        
+     
+</div>
+
+
+-->
+
+
+
+
+
+
+
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
