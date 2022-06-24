@@ -147,8 +147,9 @@ back.addEventListener('click', ()=>{
     }
     document.querySelector('#pictures').src=photos[i];
     dots[i].classList.add ("active");
-    dots[i-1].classList.remove ("active");
     dots[i+1].classList.remove ("active");
+    dots[i-1].classList.remove ("active");
+    
 })
 
 
