@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <title>NADIN Picture/About</title>
+    <title>NADIN Picture/Shop/Mirror</title>
 
     <meta name="description" content="Nadin Picture : "/>
     <meta name="keywords" content="Nadin, picture, "/>
@@ -50,7 +50,7 @@
             <div class="slideshow-container">
 
                 <div class="mySlides fade myPhoto">
-                  <img id="pictures" src="../images/carre2.jpg" style="width:100%" alt="mirror">
+                  <img id="pictures" src="../images/carre.jpg" style="width:100%" alt="mirror">
                 </div>
                 
                 
@@ -74,7 +74,7 @@
         <div class="aboutParContainer">
             <p class="aboutDescription">
                 <b>Зеркала</b> <br> <br>
-                120x50см   акрил <br>
+                120x50см акрил <br>
                 Глянцевое покрытие <br>
                 Холст, подрамник <br>
                 Единственный экземпляр <br>
@@ -102,7 +102,7 @@
 
         const back = document.querySelector('#back');
         const next = document.querySelector('#next');
-        const photos = ['../images/carre2.jpg','../images/carre.jpg','../images/carre3.jpg' ];
+        const photos = ['../images/carre.jpg','../images/carre2.jpg','../images/carre3.jpg' ];
         const dots = document.getElementsByClassName("dot");
         let i=0;
         document.querySelector("#oneDot").classList.add ("active");
@@ -144,6 +144,7 @@ back.addEventListener('click', ()=>{
     if (i<0){
         i=photos.length-1;
         document.querySelector("#oneDot").classList.remove ("active");
+        document.querySelector("#twoDot").classList.remove ("active");
     }
     document.querySelector('#pictures').src=photos[i];
     dots[i].classList.add ("active");
