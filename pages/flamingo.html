@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../favicon2.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>NADIN Picture/Shop/Mirror</title>
+
+    <meta name="description" content="Nadin Picture : "/>
+    <meta name="keywords" content="Nadin, picture, "/>
+    <meta name="author" content="Nadin Kopilova"/>
+    
+</head>
+<body>
+
+    <div class="navContainer">
+        <nav class="myNav">
+            
+            <a href="index.html" class="navLink secretLogo">
+                <img class="logoNav " src="../images/nadin2.png" alt="logo Nadin">
+            </a>
+        <div id="hiddenLinks">
+            <a href="../index.html" class="navLink">работы</a>
+            <a href="../shop.html" class="navLink">купить</a>
+            <a href="../index.html" class="navLink start">
+                <img class="logoNav " src="../images/nadin2.png" alt="logo Nadin">
+            </a>
+            <a href="../about.html" class="navLink">обо мне</a>
+            <a href="../contact.html" class="navLink">связаться</a>
+        </div>
+        </nav>
+    </div>
+
+
+    <div class="aboutContainer">
+
+        <div class="myPhotoContainer ">
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade myPhoto">
+                  <img id="pictures" src="../images/flam.jpg" style="width:100%" alt="mirror">
+                </div>
+                
+                
+                <a class="prev" id="back">❮</a>
+                <a class="next" id="next">❯</a>
+                
+                </div>
+
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" id="oneDot" onclick="currentDivOne()"></span></span> 
+                  <span class="dot" id="twoDot" onclick="currentDivTwo()"></span> 
+                  <span class="dot" id="threeDot" onclick="currentDivThree()"></span> 
+                </div>
+
+
+            
+        </div>
+
+        <div class="aboutParContainer">
+            <p class="aboutDescription">
+                <b>Фламинго</b> <br> <br>
+                40 x 40 см акрил <br>
+                Матовое покрытие <br>
+                Холст, подрамник <br>
+                Единственный экземпляр <br>
+                возможна копия</p> 
+        
+            <p class="aboutDescription"><b>8 000 ₽ </b></p>
+
+           
+            <a class="aBtn" href="../contact.html">
+            <button class="btn-2 hover-slide-down">
+                <span>Купить</span>
+              </button>
+            </a>
+
+
+        </div>
+ 
+
+    </div>
+<br> <br>
+<footer>
+    <p class="footerText">Надежда Копылова 2022 ©</p>
+  </footer>
+  <script>
+
+        const back = document.querySelector('#back');
+        const next = document.querySelector('#next');
+        const photos = ['../images/flam.jpg','../images/flam1.jpg','../images/flam3.jpg' ];
+        const dots = document.getElementsByClassName("dot");
+        let i=0;
+        document.querySelector("#oneDot").classList.add ("active");
+
+   
+
+        currentDivOne = ()=> {
+            document.querySelector('#pictures').src=photos[0];
+            document.querySelector("#oneDot").classList.add("active");
+            document.querySelector("#twoDot").classList.remove("active");
+            document.querySelector("#threeDot").classList.remove("active");
+        };
+        currentDivTwo = ()=> {
+            document.querySelector('#pictures').src=photos[1];
+            document.querySelector("#oneDot").classList.remove("active");
+            document.querySelector("#twoDot").classList.add("active");
+            document.querySelector("#threeDot").classList.remove("active");
+        };
+        currentDivThree = ()=> {
+            document.querySelector('#pictures').src=photos[2];
+            document.querySelector("#oneDot").classList.remove("active");
+            document.querySelector("#twoDot").classList.remove("active");
+            document.querySelector("#threeDot").classList.add("active");
+        };
+
+next.addEventListener('click', ()=> { 
+    i++;
+    if (i>photos.length-1) {
+        i=0;
+        document.querySelector("#threeDot").classList.remove ("active");
+    }
+    document.querySelector('#pictures').src=photos[i];
+    dots[i].classList.add ("active");
+    dots[i-1].classList.remove ("active");
+    dots[i+1].classList.remove ("active");
+})
+back.addEventListener('click', ()=>{
+    i--;
+    if (i<0){
+        i=photos.length-1;
+        document.querySelector("#oneDot").classList.remove ("active");
+        document.querySelector("#twoDot").classList.remove ("active");
+    }
+    document.querySelector('#pictures').src=photos[i];
+    dots[i].classList.add ("active");
+    dots[i+1].classList.remove ("active");
+    dots[i-1].classList.remove ("active");
+    
+})
+
+
+  </script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="../script.js"></script>
+
+</body>
+</html>
