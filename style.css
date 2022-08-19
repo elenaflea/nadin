@@ -1,4 +1,822 @@
 body{
+  margin: 0;
+  background: #fafafa;
+  width: 100%;
+  overflow-x: hidden; 
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+.navContainer{
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  background: #ffffff;
+  
+}
+.myNav, #hiddenLinks{
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.logoNav{
+  height: 60px;
+}
+.navLink{
+  margin: 0 35px;
+  color:#212121;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  letter-spacing: .5px;
+}
+
+.secretLogo{
+  display:none;
+}
+
+h2, p{
+font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffffff;
+}
+li, .clear{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  color: #212121;
+}
+
+a{
+text-decoration: none;
+}
+
+ul {
+display: inline-block;
+padding: 0; 
+}
+ul li {
+  padding: 0;
+  display: block;
+  list-style: none; 
+}
+
+.position_relative{
+position: relative;
+}
+
+.float_item a .inner{
+  position: absolute;
+  float: inline-start;
+  padding: 20px 20px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: #222;
+  background-color: #1D1D1B;
+  width: 90%;
+  opacity: 0;
+  transition: 400ms;
+  text-align: center;
+}
+
+.selected {
+opacity: 1;
+}
+
+.hiddenSearch{
+display: none;
+}
+.float_item a{
+  display : block; 
+}
+.float_item a img{
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  opacity: 1; 
+}
+
+.float_item a .inner{
+  position: absolute;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: #222;
+  background-color: #1D1D1B;
+  width: 100%;
+  opacity: 0;
+  transition: 400ms;
+  text-align: center; }
+
+.float_item a .inner .helper{
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap; 
+}
+  
+.float_item a .inner .info{
+  display: inline-block;
+  max-width: 95%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  text-align: center; 
+}
+
+.float_item a .inner .info p, .try a .inner .info h2 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word; 
+}
+
+.float_item a .inner .info h2 {
+  letter-spacing: 2px; }
+
+.try a .inner .info h2:after {
+  content: "\A ─";
+  white-space: pre; }
+
+.float_item a .inner .info span.price {
+  display: block;
+  color: #fff; 
+}
+
+
+.project_filters {
+position: absolute;
+right: 0;
+z-index: 99999;
+top: 52.5px;
+width: 20.1%; 
+}
+
+.eye{
+color: #212121;
+}
+#filters_switch {
+display: block; 
+}
+
+#filter_active_marker {
+  display: none; 
+} 
+  
+  .filters li {
+    display: block;
+    width: 100%;
+    margin: 2px 14px 0 0; 
+  }
+  .filters li a {
+    height: 30px;
+    color: #1D1D1B; 
+  }
+    .filters li a:hover, .filters li a.selected {
+      color: #1D1D1B; 
+    }
+    .filters li.browse_all {
+      float: left;
+      margin: 2px 0 0 25px; 
+    }
+    .filters li.colour {
+      width: auto;
+      float: left;
+      margin: 0 16px 16px 0; 
+    }
+    .filters li.colour:nth-child(3n+0) {
+      margin-right: 0; 
+    }
+    .filters li.colour a {
+      color: #fff;
+      opacity: 1;
+      display: block;
+      text-indent: -100000px;
+      width: 26px;
+      height: 26px;
+      border: none;
+      border-radius: 13px; 
+    }
+hr{
+  height: 1px;
+  width: 20px;
+  border: none;
+  background: #222222;
+}
+            
+
+.js #project,
+.js .project_description {
+display: block; }
+
+
+.js .projects,
+.js .project_controls {
+display: none; }
+
+.no-js #project {
+display: block; }
+
+.no-js #project_loader_before,
+.no-js #project_loader_after,
+.no-js #filters_switch,
+.no-js a.show_project_info,
+.no-js .project_description {
+display: none; }
+
+.no-js .work #project_loader {
+display: none; }
+
+.no-js .work_project #project_loader {
+display: block; }
+
+
+.floatContainer{
+display: inline-block;
+flex-wrap: wrap;
+margin-bottom: 0;
+}
+
+.float_item{
+width: 20%;
+height: auto;
+float: left;
+}
+.large{
+width: 40%;
+height: auto;
+}
+
+.float_right{
+float: right;
+}
+.aboutContainer, .myPhotoContainer{
+display: flex;
+justify-content: center;
+}
+.aboutContainer{
+margin-top: 30px;
+}
+
+.myPhoto{
+width: 500px;
+height: 500px;
+}
+.specialMarge{
+margin-top: -20%;
+}
+.specialMargeTwo{
+  margin-top: -20%;
+  margin-left: 20%;
+  }
+
+.aboutParContainer{
+width: 40%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+.aboutDescription{
+font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: #212121;
+  padding: 30px;
+  text-align: center;
+}
+
+.aBtn{
+text-decoration: none;
+}
+:active, :hover, :focus {
+outline: 0!important;
+outline-offset: 0;
+}
+::before,
+::after {
+position: absolute;
+content: "";
+}
+
+
+.btn-2 {
+position: relative;
+width: auto;
+height: auto;
+background-color: transparent;
+border: none;
+cursor: pointer;
+padding: 15px 30px;
+border: 1px solid rgb(28, 31, 30);
+}
+.btn-2 span {         
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  top: 0; left: 0;
+  width: 100%;
+  transition: 0.3s;
+  color: rgb(28, 31, 30);
+  transition: 0.2s;
+}
+
+.btn-2::before {
+  background-color: rgb(28, 31, 30);
+  transition: 0.3s ease-out;
+}
+
+.btn-2 span:hover {
+  color: rgb(255,255,255);
+  transition: 0.2s 0.1s;
+}
+
+
+.btn-2.hover-slide-down::before {
+  top: 0; left: 0; right: 0; 
+  height: 0%; 
+  width: 100%;
+}
+.btn-2.hover-slide-down:hover::before {
+  height: 100%;
+}
+
+
+.lineIcon{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.linkText{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+ 
+}
+.linkText:hover{
+transition: 0.5s linear;
+  color: #555555;
+  
+}
+.columnIcon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.rondIcon{
+  margin: 4px 20px;
+  text-decoration: none;
+  color: #222;
+  background: transparent;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.rondIcon:hover{
+  background: #999999;
+  transition : 0.5s linear 0.01s;
+}
+footer{
+background : #111111;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+height: 100px;
+margin-top: -4px;
+}
+.footerText{
+color: #fafafa;
+font-family: 'Raleway', sans-serif;
+font-size: 12px;
+font-weight: 300;
+}
+
+/* slider*/
+/* Slideshow container */
+.myPhotoContainer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.slideshow-container {
+position: relative;
+margin: auto;
+box-sizing: border-box
+}
+
+/* Hide the images by default */
+.mySlides {
+width: 500px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+
+@media screen and (min-width: 0px) {
+  h2 {
+    font-size: 19px;
+    line-height: 27px; 
+  }
+  .float_item a .inner .info p, .try a .inner .info h2 {
+    font-size: 16px;
+    line-height: 24px; 
+  } 
+  .float_item a .inner .info span.price {
+    font-size: 16px;
+    line-height: 24px; 
+  }
+  #filters_container li a, .clear {
+    font-size: 16px;
+    line-height: 24px; 
+  }
+  #filters_container{
+    background-color: #fafafa;
+    padding: 20px;
+  }  
+}
+
+
+  @media screen and (min-width: 768px) {
+    h2 {
+      font-size: 19px;
+      line-height: 27px; 
+    }
+    .float_item a .inner .info p, .try a .inner .info h2 {
+      font-size: 16px;
+      line-height: 24px; 
+    } 
+    .float_item a .inner .info span.price {
+      font-size: 16px;
+      line-height: 24px; 
+    }
+    #filters_container li a, .clear {
+      font-size: 16px;
+      line-height: 24px; 
+    }
+    .js #project,
+    .js .project_description {
+      display: none; } 
+  }
+    
+  @media screen and (min-width: 960px) {
+    h2 {
+      font-size: 19px;
+      line-height: 27px; 
+    }
+    .float_item a .inner .info p, .try a .inner .info h2 {
+      font-size: 16px;
+      line-height: 24px; 
+    } 
+    .float_item a .inner .info span.price {
+      font-size: 16px;
+      line-height: 24px; 
+    }
+    .float_item a:hover .inner {
+      opacity: 0.8;
+      transition: none; 
+    }
+    #filters_container li a, .clear {
+      font-size: 16px;
+      line-height: 24px; 
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    h2 {
+      font-size: 19px;
+      line-height: 27px; 
+    }
+    #filters_switch {
+      display: block;
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      right: 20px;
+      text-indent: -100000px; 
+    }
+    #filters_switch a {
+      background: url("../images/ui.png") no-repeat;
+      background-size: 60%; 
+      background-position: center;
+      display: block;
+      height: 50px;
+      width: 50px; 
+      } 
+    #filter_active_marker {
+      position: absolute;
+      top: 43px;
+      right: 15px;
+      content: '';
+      width: 20px;
+      height: 2px;
+      background-color: #1D1D1B; 
+    }
+    #filters_container {
+      display: block;
+      position: absolute;
+      top: 50px;
+      left: 100%;
+      text-align: center;
+      width: 100%;
+      background-color: #fff;
+      padding: 0 20px 20px 20px; 
+    }
+    #filters_container ul {
+      display: inline-block;
+      width: 100%; 
+    }
+    #filters_container ul.colours {
+      margin-top: 30px;
+      max-width: 112px; 
+    }
+    #filters_container li a, .clear {
+      font-size: 16px;
+      line-height: 24px; 
+    }
+    #filters_container .clear {
+      display: inline-block;
+      width: 100%;
+      margin-top: 50px; 
+    }
+    #filters_container .clear a {
+      opacity: 0.4; 
+      font-size: 16px;
+      line-height: 24px;
+    }
+    #filters_container .clear a.active {
+      opacity: 1; 
+    }
+    #filters_container .clear a:after {
+      content: "";
+    }
+  }
+
+  @media screen and (min-width: 1850px) {
+    .float_item a .inner .info p, .try a .inner .info h2 {
+      font-size: 16px;
+      line-height: 24px; 
+    } 
+    .float_item a .inner .info span.price {
+      font-size: 16px;
+      line-height: 24px; 
+    }
+    .project_filters {
+      width: 14.28571428571429%; 
+    }
+    #filters_container li a {
+      font-size: 16px;
+      line-height: 24px; 
+    }
+  }
+
+  @media only screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), 
+  only screen and (min-width: 1200px) and (min--moz-device-pixel-ratio: 2),
+  only screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 20 / 10), 
+  only screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), 
+  only screen and (min-width: 1200px) and (min-resolution: 192dpi), 
+  only screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  
+    #filters_switch a {
+      background: url("../images/ui.png") no-repeat;
+      background-size: 80%; 
+      background-position: center;
+    } 
+    #filter_active_marker {
+      right: 16px; 
+    }
+  }
+
+
+@media all and (max-width:920px){
+  .navContainer{
+      height: fit-content;
+      padding: 10px 0;
+  }
+  .myNav, #hiddenLinks{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      }
+      #hiddenLinks{
+          order: 2;
+      }
+      .navLink{
+          margin: 5px 0;
+          order: 2;
+      }
+      .start{
+          display: none;
+      }
+      .secretLogo{
+          display: block;
+          order: 1;
+      }
+      .float_item{
+        width: 100%;
+      }
+      .specialMarge{
+        margin-top: 0;
+      }
+      .aboutContainer{
+        flex-direction: column;
+        
+      }
+      .aboutParContainer{
+        width: 100%;
+      }
+      .rondIcon{
+        margin: 10px;
+      }
+      .project_filters {
+        position: absolute;
+        right: 0;
+        z-index: 99999;
+        top: 210px;
+        width: 50%; 
+        }
+      #filter_switch{
+        position: absolute;
+        top: 40px;
+        left: 40px;
+      }
+      #filters_container{
+        display: none;
+      }
+}
+
+@media screen and (max-width: 650px){
+.tryContainer{
+    display: block;
+}
+.float_item{
+  width: 100%;
+}
+.project_filters{
+  position: absolute;
+  left: 0px;
+  top: 250px;
+}
+#filters_container{
+  display: none;
+}
+}
+
+@media all and (max-width:500px){
+.navContainer{
+    height: fit-content;
+    padding: 10px 0;
+}
+.myNav, #hiddenLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    #hiddenLinks{
+        order: 2;
+    }
+    .navLink{
+        margin: 5px 0;
+        order: 2;
+    }
+    .start{
+        display: none;
+    }
+    .secretLogo{
+        display: block;
+        order: 1;
+    }
+    .float_item{
+      width: 100%;
+      margin: 0 auto;
+      align-self: center;
+    }
+    .myPhoto{
+      width: 100%;
+      height: auto;
+    }
+    .aboutDescription{
+        padding: 10px;
+    }
+    #filters_container{
+      display: none;
+    }
+}
+
+
+
+
+
+
+/*
+
+--------------------------
+
+
+body{
     margin: 0;
     background: #fafafa;
     width: 100%;
@@ -974,6 +1792,7 @@ footer{
           padding: 10px;
       }
 }
+*/
 
 
 
