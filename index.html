@@ -39,17 +39,29 @@
             <a href="about.html" class="navLink">обо мне</a>
             <a href="contact.html" class="navLink">связаться</a>
         </div>
+        <div id="filters_switch" class="eye">
+           
+          <a href="#"> 
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="eye" viewBox="0 0 16 16">
+                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+              </svg>
+            </a>
+          <div id="filter_active_marker" style="display: block;" >
+            
+        </div>
+        </div>
         </nav>
     </div>
 
 
     <section class="project_filters">
 
-        
 
         <div id="filters_container">
           <span class="clear"><a href="#" class="selected" style="opacity: 1;" id="all">все</a></span>
-      
+      <hr>
           <ul class="filters themes">
                 <li><a href="#" data-filter=".people" id="people" style="opacity: 0.4;">люди</a></li>
                 <li><a href="#" data-filter=".animals" id="animals" style="opacity: 0.4;">животные</a></li>
@@ -64,26 +76,13 @@
                 <li class="colour"><a href="#" data-filter=".blue" id="blue"  style="background-color: rgb(4, 132, 193); opacity: 0.4;">#0484c1</a></li>
                 <li class="colour"><a href="#" data-filter=".green" id="green"  style="background-color: rgb(3, 141, 54); opacity: 0.4;">#038d36</a></li>
                 <li class="colour"><a href="#" data-filter=".red" id="red"  style="background-color: rgb(223, 48, 54); opacity: 0.4;">#df3036</a></li>
-                <li class="colour"><a href="#" data-filter=".white" id="white"  style="background-color: rgb(242, 242, 242); opacity: 0.4;">#f2f2f2</a></li>
+                <li class="colour"><a href="#" data-filter=".white" id="white"  style="background-color: #e2e2e2; opacity: 0.4;">#e2e2e2</a></li>
                 <li class="colour"><a href="#" data-filter=".yellow" id="yellow"  style="background-color: rgb(255, 202, 0); opacity: 0.4;">#ffca00</a></li>
               </ul>
       
-      
         </div>
       
-        <div id="filters_switch" class="eye">
-           
-          <a href="#">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="eye" viewBox="0 0 16 16">
-                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-              </svg>
-            </a>
-          <div id="filter_active_marker" style="display: block;" >
-            
-        </div>
-        </div>
+       
       
       </section>
 
@@ -96,7 +95,7 @@ style="
   margin: 0 auto 0 auto;">
 
 
-    <div class="float_item large position_relative  geometric black divs" data-project-bg-colour="#141414" style="background-color: rgb(20, 20, 20); ">
+    <div class="float_item large position_relative divs" data-project-bg-colour="#141414" style="background-color: rgb(20, 20, 20); ">
       <p class="hiddenSearch">geometric black white abstract</p>
       <a href="pages/carre.html">
         <img loading="lazy" src="../images/carre.jpg">
@@ -112,7 +111,7 @@ style="
         
       
   
-    <div class="float_item  position_relative flowers red divs" data-project-bg-colour="#000000" style="background-color: rgb(138, 36, 73);">
+    <div class="float_item  position_relative divs" data-project-bg-colour="#000000" style="background-color: rgb(138, 36, 73);">
       <p class="hiddenSearch">flowers red white</p>
       <a href="pages/pion.html">
         <img loading="eager" src="../images/pion1.jpg">
@@ -128,7 +127,7 @@ style="
         
           
                           
-    <div class="float_item  position_relative flowers red divs" data-project-bg-colour="#000000" style="background-color: rgb(138, 36, 73);">
+    <div class="float_item  position_relative divs" data-project-bg-colour="#000000" style="background-color: rgb(138, 36, 73);">
       <p class="hiddenSearch">flowers red white</p>
       <a href="pages/pionTwo.html">
         <img loading="eager" src="../images/pion2.jpg">
@@ -146,7 +145,7 @@ style="
    
 
 
-    <div class="float_item  position_relative flowers wall red divs" data-project-bg-colour="#000000" style="background-color: rgb(199, 77, 78); ">
+    <div class="float_item  position_relative  divs" data-project-bg-colour="#000000" style="background-color: rgb(199, 77, 78); ">
       <p class="hiddenSearch">flowers wall red white green</p>
       <a href="pages/lotos.html">
         <img loading="eager" src="../images/lotos.jpg">
@@ -161,7 +160,7 @@ style="
     </div>
 
 
-      <div class="float_item people green position_relative divs" data-project-bg-colour="#002e33" style="background-color: rgb(0, 190, 101) ;">
+      <div class="float_item  position_relative divs" data-project-bg-colour="#002e33" style="background-color: rgb(0, 190, 101) ;">
         <p class="hiddenSearch">people animals green blue</p>
         <a href="pages/girl.html">
           <img loading="eager" src="../images/girl.jpg">
@@ -176,7 +175,7 @@ style="
       </div>
 
 
-      <div class="float_item  people black position_relative divs" data-project-bg-colour="#00be65" style="background-color:  rgb(0, 46, 51); ">
+      <div class="float_item  position_relative divs" data-project-bg-colour="#00be65" style="background-color:  rgb(0, 46, 51); ">
         <p class="hiddenSearch">people black white </p>
         <a href="pages/man.html">
           <img loading="lazy" src="../images/man.jpg">
@@ -191,7 +190,7 @@ style="
       </div>
 
 
-  <div class="float_item animals black  position_relative divs" data-project-bg-colour="#4269ff" style="background-color: rgb(66, 105, 255); ">
+  <div class="float_item position_relative divs" data-project-bg-colour="#4269ff" style="background-color: rgb(66, 105, 255); ">
     <p class="hiddenSearch"> animals black white yellow</p>
     <a href="pages/owl.html">
       <img loading="lazy" src="../images/owl.jpg">
@@ -206,7 +205,7 @@ style="
   </div>
       
    
-  <div class="float_item movies red  position_relative divs" data-project-bg-colour="#831100" style="background-color: rgb(131, 17, 0);">
+  <div class="float_item  position_relative divs" data-project-bg-colour="#831100" style="background-color: rgb(131, 17, 0);">
     <p class="hiddenSearch">flowers red white yellow</p>
     <a href="pages/roseOne.html">
       <img loading="lazy" src="../images/flower1.jpg">
@@ -220,7 +219,7 @@ style="
     </a>
   </div>
 
-    <div class="float_item large position_relative black people divs" data-project-bg-colour="#421dff" style="background-color: rgb(66, 29, 255); ">
+    <div class="float_item large position_relative divs" data-project-bg-colour="#421dff" style="background-color: rgb(66, 29, 255); ">
       <p class="hiddenSearch">people abstract black white blue</p>
       <a href="pages/manTwo.html">
         <img loading="lazy" src="../images/man2.jpg">
@@ -234,7 +233,7 @@ style="
       </a>
     </div>        
 
-    <div class="float_item animals yellow position_relative divs" data-project-bg-colour="#6082fe" style="background-color: rgb(85, 71, 25); ">
+    <div class="float_item position_relative divs" data-project-bg-colour="#6082fe" style="background-color: rgb(85, 71, 25); ">
       <p class="hiddenSearch"> animals black white yellow</p>
       <a href="pages/trio.html">
         <img loading="lazy" src="../images/trio.jpg">
@@ -250,7 +249,7 @@ style="
         
      
   
-    <div class="float_item flowers white red position_relative divs" data-project-bg-colour="#000000" style="background-color: rgb(0, 0, 0);" >
+    <div class="float_item position_relative divs" data-project-bg-colour="#000000" style="background-color: rgb(0, 0, 0);" >
       <p class="hiddenSearch"> abstract red white blue</p>
       <a href="pages/mount.html">
         <img loading="lazy" src="../images/mount1.jpg">
@@ -265,7 +264,7 @@ style="
     </div>
    
   
-    <div class="float_item position_relative black animals black  yellow divs" data-project-bg-colour="#222222" style="background-color: rgb(34, 34, 34); ">
+    <div class="float_item position_relative divs" data-project-bg-colour="#222222" style="background-color: rgb(34, 34, 34); ">
       <p class="hiddenSearch"> animals black white yellow</p>
       <a href="pages/lezard.html">
         <img loading="lazy" src="../images/lezard.jpg">
@@ -280,7 +279,7 @@ style="
     </div>
    
 
-    <div class="float_item position_relative animals black  yellow divs" data-project-bg-colour="#e00942" style="background-color: rgb(224, 9, 66); ">
+    <div class="float_item position_relative divs" data-project-bg-colour="#e00942" style="background-color: rgb(224, 9, 66); ">
       <p class="hiddenSearch"> flowers red white </p>
       <a href="pages/granat.html">
         <img loading="lazy" src="../images/granat2.jpg">
@@ -294,7 +293,7 @@ style="
       </a>
     </div>
 
-    <div class="float_item position_relative animals black  yellow divs specialMarge" data-project-bg-colour="#e00942" style="background-color: rgb(224, 9, 66); ">
+    <div class="float_item position_relative divs specialMarge" data-project-bg-colour="#e00942" style="background-color: rgb(224, 9, 66); ">
       <p class="hiddenSearch">flowers red white abstract</p>
       <a href="pages/alko.html">
         <img loading="lazy" src="../images/alko1.jpg">
@@ -309,7 +308,7 @@ style="
     </div>
 
     
-    <div class="float_item large position_relative animals black  yellow divs" data-project-bg-colour="#e00942" style="background-color: rgb(224, 9, 66);">
+    <div class="float_item large position_relative divs" data-project-bg-colour="#e00942" style="background-color: rgb(224, 9, 66);">
       <p class="hiddenSearch"> animals red </p>
       <a href="pages/flamingo.html">
         <img loading="lazy" src="../images/flam.jpg">
@@ -324,7 +323,7 @@ style="
     </div>
   
 
-    <div class="float_item position_relative black animals black  yellow divs" data-project-bg-colour="#222222" style="background-color: rgb(34, 34, 34); ">
+    <div class="float_item position_relative divs" data-project-bg-colour="#222222" style="background-color: rgb(34, 34, 34); ">
       <p class="hiddenSearch"> abstract geometric black white </p>
       <a href="pages/oko.html">
         <img loading="lazy" src="../images/glaz.jpg">
@@ -338,7 +337,7 @@ style="
       </a>
     </div>
 
-    <div class="float_item position_relative black animals black  yellow divs" data-project-bg-colour="rgb(36, 62, 117)" style="background-color: rgb(36, 62, 117); ">
+    <div class="float_item position_relative divs" data-project-bg-colour="rgb(36, 62, 117)" style="background-color: rgb(36, 62, 117); ">
       <p class="hiddenSearch"> animals blue  </p>
       <a href="pages/bird.html">
         <img loading="lazy" src="../images/bird.jpg">
@@ -352,7 +351,7 @@ style="
       </a>
     </div>
 
-    <div class="float_item position_relative black animals black  yellow divs" data-project-bg-colour="#222222" style="background-color: rgb(34, 34, 34); ">
+    <div class="float_item position_relative divs" data-project-bg-colour="#222222" style="background-color: rgb(34, 34, 34); ">
       <p class="hiddenSearch"> animals black white </p>
       <a href="pages/orel.html">
         <img loading="lazy" src="../images/orel1.jpg">
@@ -380,7 +379,7 @@ style="
       </a>
     </div>
 
-    <div class="float_item position_relative black animals black  yellow divs" data-project-bg-colour="#222222" style="background-color: rgb(34, 34, 34); ">
+    <div class="float_item position_relative divs" data-project-bg-colour="#222222" style="background-color: rgb(34, 34, 34); ">
       <p class="hiddenSearch"> people black white </p>
       <a href="pages/dance.html">
         <img loading="lazy" src="../images/dance2.jpg">
@@ -394,7 +393,7 @@ style="
       </a>
     </div>
 
-    <div class="float_item position_relative black animals black  yellow divs" data-project-bg-colour="#222222" style="background-color: #44674e; ">
+    <div class="float_item position_relative divs" data-project-bg-colour="#222222" style="background-color: #44674e; ">
       <p class="hiddenSearch"> animals black white green yellow </p>
       <a href="pages/monkey.html">
         <img loading="lazy" src="../images/monkey1.jpg">
@@ -408,7 +407,7 @@ style="
       </a>
     </div>
 
-    <div class="float_item position_relative black animals black  yellow divs" data-project-bg-colour="#222222" style="background-color: #fdd746; ">
+    <div class="float_item position_relative divs" data-project-bg-colour="#222222" style="background-color: #fdd746; ">
       <p class="hiddenSearch"> animals people red green yellow </p>
       <a href="pages/fox.html">
         <img loading="lazy" src="../images/fox1.jpg">
@@ -422,7 +421,7 @@ style="
       </a>
     </div>
 
-    <div class="float_item position_relative black people divs" data-project-bg-colour="#421dff" style="background-color: #8a624e; ">
+    <div id="jump" class="float_item position_relative divs" data-project-bg-colour="#421dff" style="background-color: #8a624e; ">
       <p class="hiddenSearch">people yellow black white</p>
       <a href="pages/bob.html">
         <img loading="lazy" src="../images/bob1.jpg">
@@ -436,7 +435,7 @@ style="
       </a>
     </div>   
     
-    <div class="float_item position_relative black animals black  yellow divs" data-project-bg-colour="#222222" style="background-color: #5a5b9e; ">
+    <div  class="float_item position_relative divs" data-project-bg-colour="#222222" style="background-color: #5a5b9e;">
       <p class="hiddenSearch"> flowers  green yellow </p>
       <a href="pages/lavender.html">
         <img loading="lazy" src="../images/lavender2.jpg">
@@ -450,7 +449,7 @@ style="
       </a>
     </div>
 
-    <div class="float_item people green position_relative divs" data-project-bg-colour="#002e33" style="background-color: #af3a4c ;">
+    <div id="jumpTwo" class="float_item position_relative divs" data-project-bg-colour="#002e33" style="background-color: #af3a4c ;" >
       <p class="hiddenSearch">people animals red black</p>
       <a href="pages/loup.html">
         <img loading="eager" src="../images/loup1.jpg">
@@ -464,7 +463,7 @@ style="
       </a>
     </div>
 
-    <div class="float_item  position_relative flowers wall red divs" data-project-bg-colour="#000000" style="background-color: #8a624e; ">
+    <div class="float_item  position_relative divs" data-project-bg-colour="#000000" style="background-color: #8a624e; ">
       <p class="hiddenSearch">flowers wall white yellow</p>
       <a href="pages/grape.html">
         <img loading="eager" src="../images/grape1.jpg">
