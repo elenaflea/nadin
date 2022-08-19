@@ -2,7 +2,7 @@
 let filters_switch = document.querySelector("#filters_switch");
 let filters_container = document.querySelector("#filters_container");
 let isActive = true;
-let eye = document.querySelector("#eye")
+let eye = document.querySelector("#eye");
 
 
 
@@ -11,10 +11,19 @@ filters_switch.addEventListener("click", showFilters);
 
 function showFilters() {
     
+    if (window.innerWidth <= 1020) {
+        isActive ?   
+        document.querySelector("#filters_container").style.display = "block" :
+        document.querySelector("#filters_container").style.display = "none" ;
+        isActive = !isActive;
+    }
+    else if (window.innerWidth > 1021) {
         isActive ?   
         gsap.to("#filters_container", {x:-300, ease: "power1.out", duration: 1}) :
         gsap.to("#filters_container", {x:0, ease: "power1.out", duration: 1}) ;
         isActive = !isActive;
+    }
+        
  
 }
 
@@ -31,9 +40,6 @@ green = document.querySelectorAll(".green");
 red = document.querySelectorAll(".red");
 white = document.querySelectorAll(".white");
 yellow = document.querySelectorAll(".yellow");
-
-
-
 
 
 
@@ -65,6 +71,10 @@ document.querySelector("#people").addEventListener("click", ()=>{
     divs.forEach (item => {
         item.querySelector(".hiddenSearch").textContent.toLowerCase().includes("people") ? (item.style.display = "block") : (item.style.display = "none");
     })
+    
+   document.querySelector("#jump").classList.add("specialMarge");
+   document.querySelector("#jumpTwo").classList.add("specialMargeTwo");
+    
 });
 
 document.querySelector("#animals").addEventListener("click", ()=>{
@@ -182,41 +192,5 @@ document.querySelector("#red").addEventListener("click", ()=>{
     })
 })
 
-// fill empty place
 
 
-const gridGap = 6;
-const gridCols = 5;
-
-const grid = document.querySelector(".tryContainer");
-const cells = Array.prototype.slice.call(
-  document.querySelectorAll(".try"),
-  0
-);
-const empty = Array.prototype.slice.call(
-  document.querySelectorAll(".empty"),
-  0
-);
-
-let a = [];
-let max = 0;
-
-cells.map(e => {
-  let y = e.offsetTop + e.offsetHeight;
-  a.push(y);
-});
-
-// get bottom-most boxes
-a.sort((a, b) => a - b);
-a = a.slice(-gridCols);
-
-// set minimum bottom box height
-max = a[a.length - 1] + gridGap * 20;
-
-// compute required row span for each filler cell
-//for (i = 0; i < gridCols; i++) {
- // const box = document.createElement("div");
- // box.style.gridRowEnd = "span " + Math.round((max - a[i]) / gridGap);
-//  box.classList = "try empty";
- // grid.appendChild(box);
-//}
