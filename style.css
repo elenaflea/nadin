@@ -281,6 +281,8 @@ margin-top: 30px;
 .myPhoto{
 width: 500px;
 height: 500px;
+/*cursor: zoom-in; */
+cursor: url("images/zoom.png") 16 16, pointer;
 }
 .specialMarge{
 margin-top: -20%;
