@@ -3,6 +3,7 @@ let filters_switch = document.querySelector("#filters_switch");
 let filters_container = document.querySelector("#filters_container");
 let isActive = true;
 let eye = document.querySelector("#eye");
+let isZoom = true;
 
 
 
@@ -159,38 +160,48 @@ document.querySelector("#black").addEventListener("click", ()=>{
         
         item.querySelector(".hiddenSearch").textContent.includes("black") ? (item.style.display = "block") +  console.log("black") : (item.style.display = "none");
     })
-})
+});
 
 
 document.querySelector("#blue").addEventListener("click", ()=>{
     divs.forEach (item => {
         item.querySelector(".hiddenSearch").textContent.toLowerCase().includes("blue") ? (item.style.display = "block") : (item.style.display = "none");
     })
-})
+});
 
 document.querySelector("#green").addEventListener("click", ()=>{
     divs.forEach (item => {
         item.querySelector(".hiddenSearch").textContent.toLowerCase().includes("green") ? (item.style.display = "block") : (item.style.display = "none");
     })
-})
+});
 
 document.querySelector("#white").addEventListener("click", ()=>{
     divs.forEach (item => {
         item.querySelector(".hiddenSearch").textContent.toLowerCase().includes("white") ? (item.style.display = "block") : (item.style.display = "none");
     })
-})
+});
 
 document.querySelector("#yellow").addEventListener("click", ()=>{
     divs.forEach (item => {
         item.querySelector(".hiddenSearch").textContent.toLowerCase().includes("yellow") ? (item.style.display = "block") : (item.style.display = "none");
     })
-})
+});
 
 document.querySelector("#red").addEventListener("click", ()=>{
     divs.forEach (item => {
         item.querySelector(".hiddenSearch").textContent.toLowerCase().includes("red") ? (item.style.display = "block") : (item.style.display = "none");
     })
-})
+});
 
+
+
+
+
+function resizeImg() {  
+    isZoom ?
+    document.querySelector("#pictures").style.transform = "scale(1.5)":
+    document.querySelector("#pictures").style.transform = "scale(1.0)";
+    isZoom = !isZoom;
+}
 
 
