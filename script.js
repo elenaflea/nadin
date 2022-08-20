@@ -199,7 +199,7 @@ document.querySelector("#red").addEventListener("click", ()=>{
 
 function resizeImg() {  
     isZoom ?
-    document.querySelector("#pictures").style.transform = "scale(1.5)":
+    document.querySelector("#pictures").style.transform = "scale(1.7)":
     document.querySelector("#pictures").style.transform = "scale(1.0)";
     isZoom = !isZoom;
 }
