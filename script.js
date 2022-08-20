@@ -198,10 +198,22 @@ document.querySelector("#red").addEventListener("click", ()=>{
 
 
 function resizeImg() {  
-    isZoom ?
-    document.querySelector("#pictures").style.transform = "scale(1.7)":
-    document.querySelector("#pictures").style.transform = "scale(1.0)";
-    isZoom = !isZoom;
+
+    if (window.innerWidth <= 1020) {
+        document.querySelector(".myPhoto").style.overflow = "hidden";
+
+        isZoom ?
+        document.querySelector("#pictures").style.transform = "scale(1.7)":
+        document.querySelector("#pictures").style.transform = "scale(1.0)";
+        isZoom = !isZoom;
+    }
+    else {
+        isZoom ?
+        document.querySelector("#pictures").style.transform = "scale(1.7)":
+        document.querySelector("#pictures").style.transform = "scale(1.0)";
+        isZoom = !isZoom;
+    }
+    
 }
 
 
